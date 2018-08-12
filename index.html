@@ -329,17 +329,12 @@
 					<p>ОСТАЛИСЬ ВОПРОСЫ?</p>
 					<span>Задайте их нашему специалисту</span>
 				</div>
-					<form class="feedback" id="sender2" action="send.php" 
-    method="POST" 
-    name="order-form"
-    accepted-charset="utf-8">
-						<input type="text" id="name-send" class="name-send" name="name2" placeholder="Ваше имя" data-toggle="popover" data-placement="top" data-content="• поле Имя обязательно для заполнения<br>• длина имени должна составлять не менее двух символов<br>• поле должно содержать только русские или латинские буквы" data-original-title="" title="" required>
-						<input type="tel" id="tel-send" class="tel-send" name="tel2" placeholder="Ваш телефон" data-toggle="popover" data-placement="bottom" data-content="• поле Ваш телефон обязательно для заполнения<br>• поле должно содержать правильный телефонный номер (например: +78888888888)" data-original-title="" title="" required onkeyup="this.value = this.value.replace (/\D/, '')">
-						<input id="form-checkbox" class="b-checkbox" name="agreement2" data-type="checkbox" type="checkbox" required>
-						<label for="form-checkbox">Я ознакомился и согласен с <span  data-fancybox data-src="#agreement" href="javascript:;">правилами</span></label>
-						<input type="submit" class="submit" value="ОСТАВИТЬ ЗАЯВКУ">
-						<p id="out2"></p>
-					</form>
+					<form id="application" action=" application.php" method="POST" name=" application ">
+			<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+			<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required/>
+			<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
+			<button class="applicationButton" type="submit" form="application"> Получить прайс </button>
+		</form>
 				<hr>
 				<div class="service">
 					<img src="images/footer-car.png">
