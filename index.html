@@ -329,7 +329,10 @@
 					<p>ОСТАЛИСЬ ВОПРОСЫ?</p>
 					<span>Задайте их нашему специалисту</span>
 				</div>
-					<form class="feedback" id="sender2" action="http://bars32.ru/controller/sender2.php" enctype="multipart/form-data" method="POST">
+					<form class="feedback" id="sender2" action="send.php" 
+    method="POST" 
+    name="order-form"
+    accepted-charset="utf-8">
 						<input type="text" id="name-send" class="name-send" name="name2" placeholder="Ваше имя" data-toggle="popover" data-placement="top" data-content="• поле Имя обязательно для заполнения<br>• длина имени должна составлять не менее двух символов<br>• поле должно содержать только русские или латинские буквы" data-original-title="" title="" required>
 						<input type="tel" id="tel-send" class="tel-send" name="tel2" placeholder="Ваш телефон" data-toggle="popover" data-placement="bottom" data-content="• поле Ваш телефон обязательно для заполнения<br>• поле должно содержать правильный телефонный номер (например: +78888888888)" data-original-title="" title="" required onkeyup="this.value = this.value.replace (/\D/, '')">
 						<input id="form-checkbox" class="b-checkbox" name="agreement2" data-type="checkbox" type="checkbox" required>
